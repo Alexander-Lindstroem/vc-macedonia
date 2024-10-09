@@ -1,0 +1,7 @@
+- Header
+
+- Navigation bar
+
+- Main Page
+
+- Footer
