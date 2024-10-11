@@ -1,7 +1,78 @@
+- Colors
+    - Background Color
+        (#88CCF1)
+    - Article and Header color
+        (#C1DFF0)
+    - Footer Color
+        (#3587A4)
+    - Text Color for Header and Article    
+        (#2D848A)
+    - Text Color for Footer
+        (#FFFFFF)
+
 - Header
+    - Logo
+        (Left)
+    - Navigation bar
+        (Hover on menu)
+        - Home
+        - Project
+        - Changes
+        - Branches
+        - About Us
 
-- Navigation bar
+- Home Page
+    - Article
+        (What the page is about)
+        ("Remember to always pull first")
+        (Maybe image?)
 
-- Main Page
+- Project Page
+    - Article
+        ("How to make an SSH key")
+        (Include all the terminal commands needed)
+        (Show how to add the SSH key on Github with an image/screenshot)
+    - Article
+        ("How to create a repository")
+        (Include all the terminal commands needed for local repository)
+        (Show where on Github you create a new repository)
+        (Include the terminal commands retrieved from Github)
 
+- Changes Page
+    - Article
+        ("How to add changes to your repository")
+        (Show the commands needed to add changes to your repository)
+    - Article
+        ("How to see the changes made in your local repository")
+        (Show the commands needed to display the status of your changes)
+
+- Branches Page
+    - Article
+        ("How to create and switch branches")
+        (Show the commands needed to add a branch to your repository)
+        (Show how to "delete" branches on Github with an image/screenshot)
+    - Article 
+        ("How to merge branches with main")
+        (Show the commands needed to merge a branch with main)
+        (Show how to make a pull request on Github with images)
+
+- About us page
+    - Section
+        - Alexander
+            (Image)
+            (Self introduction)
+        - Mikael
+            (Image)
+            (Self introduction)
+        - Priyesh
+            (Image)
+            (Self introduction)
+        - Saif
+            (Image)
+            (Self introduction)
+        - Caroline
+            (Image)
+            (Self introduction)
 - Footer
+    (Team name + contributors)
+    (Futuregames logo)
