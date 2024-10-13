@@ -6,3 +6,38 @@ html {
     height: 100vh;
 }
 
+body {
+    background-color: #88CCF1;
+    margin: 0;
+}
+
+.header {
+    background-color: #C1DFF0;
+    padding: 10px;
+}
+
+.header__page-title {
+    color: #2D848A;
+    text-align: center;
+    font-size: 4rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2D848A;
+}
+
+.article__project {
+    background-color: #C1DFF0;
+
+}
+
+code {
+    background-color: #ffffff;
+}
+
+.ul {
+    list-style-type: circle;
+    background-color: black;
+}
