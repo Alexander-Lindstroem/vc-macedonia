@@ -24,6 +24,8 @@ body {
 }
 
 h3 {
+    background-color: #9ce8ed;
+    padding: 14px;
     text-align: center;
     font-size: 1.5rem;
     color: #2D848A;
@@ -36,9 +38,18 @@ h3 {
     padding: 16px;
 }
 
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
 code {
     background-color: #ffffff;
     padding: 2px;
+}
+
+.ol {
+    display: flex;
+    flex-direction: row;
 }
 
 .ul {
@@ -51,5 +62,12 @@ code {
     border-radius: 10px;
     margin: 20px;
     padding: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .image {
+        padding: 24px;
+    }
+    
 }
  
