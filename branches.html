@@ -5,10 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branches</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
 </head>
 <body>
     <header class="header">
-        <h1>Temporarily header</h1>
+        <div class="menu">
+            <a class="menu__logo-container" href="./index.html"><div class="logo">Git Guide</div></a>
+            <a class="menu-item" href="./project.html"><p class="menu-item__text">Starting out</p></a>
+            <a class="menu-item" href="./changes.html"><p class="menu-item__text">Adding changes</p></a>
+            <a class="menu-item" href="./branches.html"><p class="menu-item__text" style="text-shadow: #000 0 0 16px;">Branching</p></a>
+            <a class="menu-item" href="./about.html"><p class="menu-item__text">About us</p></a>
+        </div>
+        <div class="current-page-display">
+            <h1 class="page-title">>>git branch</h1>
+        </div>
     </header>
     <main class="main-content">
         <div class="main-content__article featured">Firstly, to create and switch branches in Git, first ensure that you are in the main branch by typing "git checkout main" in your command line interface (terminal). To create a new branch, use the command "git checkout -b [name of your branch]". This will create a new branch and automatically switch to it. To switch between existing branches, use the command "git checkout [branch-name]". This allows you to move back and forth between different branches within your repository. It is important to keep track of which branch you are currently working on to avoid any confusion or conflicts with your code changes. By effectively managing branches in Git, you can work on multiple features simultaneously without affecting the main repo, allowing for greater collaboration and flexibility within the team.  Lastly, if you want to delete or rather hide a branch in Github, got to Repository > Branches > Press on the garbage can. </div>
