@@ -1,3 +1,102 @@
 * {
   box-sizing: border-box;  
 }
+
+html {
+  height: 100vh;
+}
+
+.body {
+  margin: 0;
+
+}
+
+.header__page-title {
+  text-align: center;
+}
+
+.main content {
+  background-color: aqua;
+  padding: 24px;
+}
+
+.grid-container {
+  background-color: aquamarine;
+  display: grid;
+  grid-template: repeat(5, 200px) / repeat(5, 2fr);
+  gap: 16px;
+  padding: 24px;
+}
+
+.grid-container__item1 {
+  border-radius: 20px;
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 1 / span 1;
+  text-align: center;
+}
+
+.grid-container__item1 img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-container__item2 {
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 1 / span 1;
+}
+
+.grid-container__item3 {
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 1 / span 1;
+}
+
+.grid-container__item4 {
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 1 / span 1;
+}
+
+.grid-container__item5 {
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 1 / span 1;
+}
+
+.grid-container__item6 {
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 3 / span 2;
+  grid-row-start: 2;
+  text-align: center;
+}
+
+.grid-container__item7 {
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 3 / span 2;
+  grid-row-start: 2;
+}
+
+.grid-container__item8 {
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 3 / span 2;
+  grid-row-start: 2;
+}
+
+.grid-container__item9 {
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 3 / span 2;
+  grid-row-start: 2;
+}
+
+.grid-container__item10 {
+  background-color: blue;
+  border-radius: 20px;
+  grid-row: span 3 / span 2;
+  grid-row-start: 2;
+}
