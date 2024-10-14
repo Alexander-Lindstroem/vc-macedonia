@@ -1,4 +1,9 @@
+.header {
+    background-color: #C1DFF0;
+}
+
 .menu {
+    padding: 16px;
     display: grid;
     grid-template: 1fr 1fr/ 1fr 1fr 1fr;
     grid-template-areas:
@@ -8,4 +13,30 @@
 
 .menu__logo-container {
     grid-area: logo;
+    text-decoration: none;
+}
+
+.logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+    margin: none;
+}
+
+.logo:hover {
+    text-shadow: #fff 0 0 16px;
+}
+
+.menu-item {
+    text-decoration: none;
+}
+
+.menu-item:hover {
+    text-shadow: #2D848A 0 0 10px;
+}
+
+.menu-item__text {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #2D848A;
 }
