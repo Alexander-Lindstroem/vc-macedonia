@@ -109,3 +109,124 @@ text-align: center;
   }
  
 }
+
+html {
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+  background-color: burlywood;
+}
+
+.header {
+  background-color: aquamarine;
+  padding: 16px;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: bisque;
+  padding: 16px;
+  margin: 0;
+  grid-template-areas: 
+      "featured first-post"
+      "featured__image second__image";
+}
+
+.main-content__article.featured {
+  display: flex;
+  flex-direction: column;
+  grid-area: featured;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 10px;
+  background-color: rgb(116, 181, 181);
+  border-radius: 5px;
+  font-weight: 600;
+  word-spacing: 7px;
+}
+
+.main-content__article.featured .featured__image {
+  display: none;
+  height: 100px;
+}
+
+.main-content__article-first-post .second__image {
+  display: none;
+  height: 100px;
+
+}
+
+.main-content__article-first-post{
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  word-spacing: 7px;
+  background-color: rgb(116, 181, 181);
+  color: black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.footer  {
+  background-color: aquamarine;
+  padding: 16px;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+      background-color:burlywood;
+  } 
+
+  .header { 
+      padding: 32px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  
+  
+  .main-content {
+      display: grid;
+      gap: 16px;
+      grid-template: repeat(4, auto) / repeat (2, 1fr);
+      padding: 24px;
+      grid-template-areas: 
+      "featured first-post"
+      "featured__image second__image";
+      max-width: 1024px;
+      margin: auto;
+
+  }
+
+  .main-content__article {
+      margin: 0;
+  }
+  
+  .main-content__article.featured {
+      grid-area: featured;
+      display: flex;
+      flex-direction: column;
+  }
+
+  .first-post {
+      grid-area: first-post;
+  }
+
+}
