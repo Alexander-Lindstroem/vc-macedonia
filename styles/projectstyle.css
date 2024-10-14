@@ -42,6 +42,7 @@ h3 {
     display: flex;
     flex-direction: column;
 }
+
 code {
     background-color: #ffffff;
     padding: 2px;
