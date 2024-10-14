@@ -118,90 +118,28 @@ html {
   text-align: center;
 }
 
-.main content {
-  background-color: aqua;
-  padding: 24px;
-}
-
-.grid-container {
+.main-content {
   background-color: aquamarine;
+  border-radius: 20px;
   display: grid;
-  grid-template: repeat(5, 200px) / repeat(5, 2fr);
   gap: 16px;
+  grid-template: repeat(5, 200px) / repeat(5, 2fr);
   padding: 24px;
 }
-
-.grid-container__item1 {
+.grid-container {
+  background-color: azure;
+  background-size: cover;
+  background-position: center;
   border-radius: 20px;
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 1 / span 1;
-  text-align: center;
+  grid-template-areas: 
+  "image image image image image"
+  "text text text text text";
+  overflow: hidden;
 }
 
-.grid-container__item1 img {
+.grid-container.picture img{
   width: 100%;
   height: auto;
-}
-
-.grid-container__item2 {
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 1 / span 1;
-}
-
-.grid-container__item3 {
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 1 / span 1;
-}
-
-.grid-container__item4 {
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 1 / span 1;
-}
-
-.grid-container__item5 {
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 1 / span 1;
-}
-
-.grid-container__item6 {
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 3 / span 2;
-  grid-row-start: 2;
-  text-align: center;
-}
-
-.grid-container__item7 {
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 3 / span 2;
-  grid-row-start: 2;
-}
-
-.grid-container__item8 {
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 3 / span 2;
-  grid-row-start: 2;
-}
-
-.grid-container__item9 {
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 3 / span 2;
-  grid-row-start: 2;
-}
-
-.grid-container__item10 {
-  background-color: blue;
-  border-radius: 20px;
-  grid-row: span 3 / span 2;
-  grid-row-start: 2;
 }
 
 body {
