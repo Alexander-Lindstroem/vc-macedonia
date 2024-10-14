@@ -1,0 +1,23 @@
+.main-content {
+    background-color: aquamarine;
+    border-radius: 20px;
+    display: grid;
+    gap: 16px;
+    grid-template: repeat(5, 200px) / repeat(5, 2fr);
+    padding: 24px;
+}
+.grid-container {
+    background-color: azure;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    grid-template-areas: 
+    "image image image image image"
+    "text text text text text";
+    overflow: hidden;
+}
+  
+.grid-container.picture img{
+    width: 100%;
+    height: auto;
+}
