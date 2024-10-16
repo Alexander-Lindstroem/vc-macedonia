@@ -29,6 +29,10 @@
     margin-top: 16px;
 }
 
+.grid-container.picture.alex {
+    background-image: url("../images-aboutus/alex.jpg");
+}
+
 @media screen and (min-width: 764px) {
     .main-content {
         display: grid;
