@@ -65,6 +65,13 @@ code {
     padding: 24px;
 }
 
+.repo {
+    background-color: rgb(165, 206, 237);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 24px;
+}
+
 @media screen and (min-width: 768px) {
     .image {
         padding: 24px;
