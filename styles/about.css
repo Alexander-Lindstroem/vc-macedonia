@@ -33,6 +33,10 @@
     background-image: url("../images-aboutus/alex.jpg");
 }
 
+.grid-container.picture.saif {
+    background-image: url(../images-aboutus/saif.jpg);
+}
+
 @media screen and (min-width: 764px) {
     .main-content {
         display: grid;
