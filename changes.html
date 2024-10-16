@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Changes</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="styles/header.css">
+
 </head>
 <body>
     <header class="header">
@@ -21,12 +23,67 @@
         </div>
     </header>
 
-    <main class="header__page-title">
-        Hello
+
+    <main class="main-content">
+        <div class="main-content__article featured">
+            <p>Once you have a Git repository that captures a snapshot of the changes in your working directory, the next step is to commit these changes to your repository whenever the project reaches a state worth recording (refer to "Getting a Git Repository" if you need to set up a project with Git or clone an existing one).</p>
+            <p>Each file in your working directory can be in one of two states: tracked or <i>untracked.</i> </p>
+            <ul>
+            <li><b>Tracked files </b> are those that were part of the last recorded snapshot. They can exist in one of three forms: unmodified, modified, or staged.</li><br>
+            <li><b>Untracked files</b> are those present in the working directory but not included in the last snapshot and not added to the staging area.</b></li>
+            </ul>
+            <p>The working tree is a single checkout of one version of the project. These files are pulled out of the compressed database in the Git directory and placed on disk for you to use or modify.</p>
+            <p> staging area is a file, generally contained in your Git directory, that stores information about what will go into your next commit. Its technical name in Git parlance is the “index”, but the phrase“staging area” works just as well.</p>
+            <p>The Git directory is where Git stores the metadata and object database for your project. This is the most important part of Git, and it is what is copied when you clone a repository from another computer.</p>
+            <p>The basic Git workflow goes something like this:</p>
+            <ul>
+            <li>You modify files in your working tree.</li><br>
+            <li>You selectively stage just those changes you want to be part of your next commit, which adds<i> only</i> those changes to the staging area.</li><br>
+            <li>You do a commit, which takes the files as they are in the staging area and stores that snapshot permanently to your Git directory.</li>    
+            </ul>
+            <p>If a particular version of a file is in the Git directory, it’s considered <i>committed</i>. If it has been <i>modified</i> and was added to the staging area, it is <i>staged</i>. And if it was changed since it was checked out but has not been staged, it is <i>modified</i>.</p>
+        </div>
+            <img class="featured__image" src="./image/changes in repository.jpg" alt="info"  width="105%">                        
+
     </main>
-
     <footer class="footer">
-
+        <div class="container__footer">
+            <div class="column__footer">
+                <a href=""><img src="./image/futurelogo.jpg" alt="Company Logo" width="100"></a><h3> This is Futuregames</h3>
+                
+            </div>
+            <div class="column__footer">
+                <h3>TEAM MACEDONIA</h3>
+                <ul>
+                    <li>Alexander Lindström</li>
+                    <li>Saif El Islam Eisa</li>
+                    <li>Priyesh Illam</li>
+                    <li>Caroline Lindbom</li>
+                    <li>Mikael Maatala Sand</li>
+                </ul>
+            </div>
+            <div class="column__footer">
+                <h3>Connect with Futuregames</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/FuturegamesEDU/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/school/futuregames/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/futuregamesedu/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://x.com/futuregamesedu"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+           
+            <div class="column__footer">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Hammarby Fabriksväg 61, 120 30</p>
+                <p><i class="fas fa-phone-alt"></i> +46(0)8 33 60 15</p>
+                <p><i class="fas fa-envelope"></i><a href="mailto: info@futuregames.se">info@futuregames.se</a></p>
+                
+            </div>
+        </div>
+    
+        <div class="copyright">
+            <p>&copy; 2024 @ Team Macedonia</p>
+        </div>
     </footer>
 </body>
 </html>
