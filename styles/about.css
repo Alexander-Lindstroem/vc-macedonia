@@ -2,9 +2,11 @@
     background-color: aquamarine;
     border-radius: 20px;
     display: grid;
-    gap: 16px;
+    gap: 30px;
     grid-template: repeat(5, 200px) / repeat(5, 2fr);
     padding: 24px;
+    margin: 0 auto;
+    height: 500px;
 }
 .grid-container {
     background-color: azure;
@@ -15,6 +17,11 @@
     "image image image image image"
     "text text text text text";
     overflow: hidden;
+    justify-content: center;
+}
+
+.grid-container.info {
+    text-align: center;
 }
   
 .grid-container.picture img{
