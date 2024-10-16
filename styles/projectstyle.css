@@ -1,28 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
-html {
-    height: 100vh;
-}
-
-body {
-    background-color: #88CCF1;
-    display: flex;
-    margin: 0;
-}
-
-.header {
-    background-color: #C1DFF0;
-    padding: 10px;
-}
-
-.header__page-title {
-    color: #2D848A;
-    text-align: center;
-    font-size: 4rem;
-}
-
 h3 {
     background-color: #9ce8ed;
     padding: 14px;
