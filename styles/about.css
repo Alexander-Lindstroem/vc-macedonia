@@ -40,6 +40,11 @@
 .grid-container.picture.priyesh {
     background-image: url("../images-aboutus/priyesh.jpg");
 }
+
+.grid-container.picture.caroline {
+    background-image: url(../images-aboutus/carro.jpg);
+}
+
 @media screen and (min-width: 764px) {
     .main-content {
         display: grid;
