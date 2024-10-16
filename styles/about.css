@@ -37,6 +37,9 @@
     background-image: url(../images-aboutus/saif.jpg);
 }
 
+.grid-container.picture.priyesh {
+    background-image: url("../images-aboutus/priyesh.jpg");
+}
 @media screen and (min-width: 764px) {
     .main-content {
         display: grid;
