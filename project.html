@@ -27,9 +27,12 @@
             <article class="article__project">
                <h3>How to make an SSH key in Github</h3>
                 <ol class="flexbox">
-                    <div class="ssh__key a"><li>Check for existing SSH keys on you computer, open terminal and type: 
-                        <p><code>$ ls -al ~/.ssh</code></p></li>
-                    <p>If you see files like <code>id_rsa</code> and <code>id_rsa.pub</code> you already have a key</p></div>
+                    <div class="ssh__key a">
+                        <li>Check for existing SSH keys on you computer, open terminal and type: 
+                            <p><code>$ ls -al ~/.ssh</code></p>
+                        </li>
+                        <p>If you see files like <code>id_rsa</code> and <code>id_rsa.pub</code> you already have a key</p>
+                    </div>
                     <div class="ssh__key">
                         <li>Generante a new SSH key (if you don't already have one). I terminal, type:
                             <p><code>ssh-keygen -t ed25519 -(your gitemail@example.com)</code></p>
@@ -87,7 +90,7 @@
                         <ul>Go to your account on github.</ul>
                         <ul>Go to repositories and create a new repository.</ul>
                         <ul>Give the repository a name and choose "public", then "create repository".</ul>
-                        <b>Now you have created a new repository!</b>
+                        <p><b>Now you have created a new repository!</b></p>
                     </div>
                     <div class="repo">
                         <li>Now you want to connect your local code to the repository!</li>
