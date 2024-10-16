@@ -18,7 +18,7 @@
     padding: 16px;
 }
   
-.grid-container.picture{
+.grid-container.picture {
     background-size: cover;
     width: calc(100% - 32px);
     height: 400px;
@@ -55,7 +55,6 @@
     }
     .grid-container {
         margin: 0;
-
     }
 
     .grid-container.picture {
