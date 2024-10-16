@@ -26,8 +26,10 @@
             <article class="article__project">
                <h3>How to make an SSH key in Github</h3>
                 <ol class="flexbox">
-                    <div class="ssh__key a"><li>Check for existing SSH keys on you computer, open terminal and type: 
-                        <p><code>$ ls -al ~/.ssh</code></p></li>
+                    <div class="ssh__key a">
+                        <li>Check for existing SSH keys on you computer, open terminal and type: 
+                            <p><code>$ ls -al ~/.ssh</code></p>
+                    </li>
                     <p>If you see files like <code>id_rsa</code> and <code>id_rsa.pub</code> you already have a key</p></div>
                     <div class="ssh__key">
                         <li>Generante a new SSH key (if you don't already have one). I terminal, type:
@@ -86,6 +88,20 @@
                         <ul>Go to your account on github</ul>
                         <ul>Go to repositories and create a new repository</ul>
                         <ul>Give the repository a name and choose "public", then "create repository"</ul>
+                    </div>
+                    <div class="repo">
+                        <li>Now you want to connect your local code to the repository!</li>
+                        <ul>After you clicked "create a repository", follow the instructions under <b>"...or push an existing repository from command line"</b></ul>
+                    </div>
+                    <div class="repo">
+                        <li>Now we want to clone our git project!</li>
+                        <ul>Go to the home page of the repository on github then look for the green "code" button, click that and in the dropdown, choose the "local" tab and then the "ssh" tab.</ul>
+                        <p>This will allow you to copy the url, should look something like this: <code>git@github.com:user/project-name.git</code></p>
+                        <li>In the terminal use the <b>git clone</b>command to make a local copy of the project, so write<code>git clone</code>and paste in your url that you copied and press enter.</li>
+                    </div>
+                    <div class="repo">
+                        <b>Done!</b>
+                        <p>You have now created a local version of your project on your machine.</p>
                     </div>
                 </ol>   
             </article>        
