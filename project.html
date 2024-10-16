@@ -80,13 +80,25 @@
                         <li>Steps of creating a project on Github:</li>
                         <p>1.Create a local project in the usual way (make a folder withex. index.html and a styles folder with a css file).</p>
                         <p>2. Then you have to turn a normal project into a git project:</p>
-                        <ul>In terminal, type: <code>git init</code>,this creates a hidden directory called <code>git</code> that enables communication with github. (To see hidden files, type: <code>-a</code>in command line).</ul>
+                        <ul>In terminal, type: <code>git init</code>,this creates a hidden directory called <code>.git</code> that enables communication with github. (To see hidden files, type: <code>-a</code>in command line).</ul>
                     </div>
                     <div class="repo">
                         <li>Create a repository for the project on github:</li>
-                        <ul>Go to your account on github</ul>
-                        <ul>Go to repositories and create a new repository</ul>
-                        <ul>Give the repository a name and choose "public", then "create repository"</ul>
+                        <ul>Go to your account on github.</ul>
+                        <ul>Go to repositories and create a new repository.</ul>
+                        <ul>Give the repository a name and choose "public", then "create repository".</ul>
+                        <b>Now you have created a new repository!</b>
+                    </div>
+                    <div class="repo">
+                        <li>Now you want to connect your local code to the repository!</li>
+                        <ul>After you clicked "create a repository", follow the instructions under <b>"...or push an existing repository from command line"</b></ul>
+                    </div>
+                    <div class="repo">
+                        <li>Now we want to clone our git project!</li>
+                        <ul>Go to the home page of the repository on github then look for the green "code" button, click that and in the dropdown, choose the "local" tab and then the "ssh" tab.</ul>
+                        <p>This will allow you to copy the url, should look something like this: <code>git@github.com:user/project-name.git</code></p>
+                        <li>In the terminal use the <b>git clone</b>command to make a local copy of the project, so write<code>git clone</code>and paste in your url that you copied and press enter.</li>
+                        <b>Done!</b>
                     </div>
                 </ol>   
             </article>        
