@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/projectstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="styles/header.css">
 </head>
@@ -22,9 +23,75 @@
         </div>
     </header>
 
-    <main class="header__page-title">
- 
-    </main>
+        <main class="main">
+            <article class="article__project">
+               <h3>How to make an SSH key in Github</h3>
+                <ol class="flexbox">
+                    <div class="ssh__key a"><li>Check for existing SSH keys on you computer, open terminal and type: 
+                        <p><code>$ ls -al ~/.ssh</code></p></li>
+                    <p>If you see files like <code>id_rsa</code> and <code>id_rsa.pub</code> you already have a key</p></div>
+                    <div class="ssh__key">
+                        <li>Generante a new SSH key (if you don't already have one). I terminal, type:
+                            <p><code>ssh-keygen -t ed25519 -(your gitemail@example.com)</code></p>
+                        </li>
+                        <p>When promted, press "Enter" to accept the default location</p>
+                        <p>Set a password for extra security (optional)</p>
+                    </div>
+                    <div class="ssh__key">
+                        <li>Add the SSH key to the SSH agent</li>
+                        <p>Start the SSH agent:</p>
+                        <p><code>eval "dollarsign(ssh-agent -s)</code></p>
+                        <p>Then add your SSh key:</p>
+                        <p><code>ssh-add "-"/.ssh/id_ed25519</code></p>
+                    </div>    
+                    <div class="ssh__key">
+                        <li>Copy the SSH key to your clipboard</li>
+                        <p>Copy your key to your clipboard</p>
+                        <p>Now, copy your public key to add it to Github:</p>
+                        <p>Run this command to copy it:</p>
+                        <p><code>cat ~/.ssh/id_ed25519.pub</code></p>
+                        <p>Highlight the key and copy it.</p>
+                    </div>
+                    <div class="ssh__key">
+                    <li>Add the SSH key to your Github account:</li>
+                    <ul>
+                        <li>Go to your github account</li>
+                        <li>In the upper-right corner, click on your profile picture, then go to SETTINGS.</li>
+                        <img class="image cornerlogo" src="./project-article images/cornerlogo.png" alt="info" height="100%" width="100%">
+                        <img class="image settings" src="./project-article images/settings.png" alt="info" height="100%" width="100%">
+                        <li>On the left sidebar, click SHH and GPG keys.</li>
+                        <img class="image shhandgpgkeys" src="./project-article images/sshandgpgkeys.png" alt="info" height="100%" width="100%">
+                        <li>Click "New SSH key".</li>
+                        <img class="image newkey" src="./project-article images/newkey.png" alt="info" height="100%" width="100%">
+                    </ul></div>
+                    <div class="image ssh__key">
+                        <li>Paste your key and give it a title, then click "Add SSH key".</li>
+                        <img class="image addkey" src="./project-article images/addkey.png" alt="info" height="100%" width="100%">
+                    </div>
+                    <p><b>You are done! Now you can use SSH to interact with Github.</b></p>
+                </ol>
+                <h3>How to create a repository</h3>
+                <ol class="flexbox">
+                    <div class="repo">
+                        <p><b>Why is remote repositories necessary?</b></p>
+                        <p>It makes it possible for multiple developers to work on the same projet at the same time. Also to see who has done what. Remote repositories allows us to store the different versions of a code to maintain a remote history.</p>
+                    </div>
+                    <div class="repo">
+                        <li>Steps of creating a project on Github:</li>
+                        <p>1.Create a local project in the usual way (make a folder withex. index.html and a styles folder with a css file).</p>
+                        <p>2. Then you have to turn a normal project into a git project:</p>
+                        <ul>In terminal, type: <code>git init</code>,this creates a hidden directory called <code>git</code> that enables communication with github. (To see hidden files, type: <code>-a</code>in command line).</ul>
+                    </div>
+                    <div class="repo">
+                        <li>Create a repository for the project on github:</li>
+                        <ul>Go to your account on github</ul>
+                        <ul>Go to repositories and create a new repository</ul>
+                        <ul>Give the repository a name and choose "public", then "create repository"</ul>
+                    </div>
+                </ol>   
+            </article>        
+        </main>
+   
     <footer class="footer">
         <div class="container__footer">
             <div class="column__footer">
