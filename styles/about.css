@@ -1,30 +1,54 @@
 .main-content {
     background-color: aquamarine;
-    border-radius: 20px;
-    display: grid;
-    gap: 30px;
-    grid-template: repeat(5, 200px) / repeat(5, 2fr);
-    padding: 24px;
-    margin: 0 auto;
-    height: 500px;
+    display: flex;
+    flex-direction: column;
 }
+
 .grid-container {
     background-color: azure;
     background-size: cover;
     background-position: center;
     border-radius: 20px;
-    grid-template-areas: 
-    "image image image image image"
-    "text text text text text";
     justify-content: center;
-    overflow: hidden;
+    margin: 8px 16px;
 }
 
 .grid-container.info {
     text-align: center;
+    padding: 16px;
 }
   
-.grid-container.picture img{
-    width: 100%;
-    height: auto;
+.grid-container.picture{
+    background-size: cover;
+    width: calc(100% - 32px);
+    height: 400px;
+}
+
+.grid-container.picture.mikael {
+    background-image: url("../images-aboutus/jag.jpg");
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 764px) {
+    .main-content {
+        display: grid;
+        gap: 24px;
+        grid-template: repeat(2, 2fr) / repeat(5, 2fr);
+        padding: 24px;
+        margin: 0 auto;
+    }
+    .grid-container {
+        margin: 0;
+
+    }
+
+    .grid-container.picture {
+        width: 100%;
+        grid-row: 1 / span 5;
+        height: 200px
+    }
+    
+    .grid-container.picture.mikael {
+        margin-top: 0;
+    }
 }
