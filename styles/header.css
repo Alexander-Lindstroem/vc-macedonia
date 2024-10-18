@@ -50,3 +50,12 @@
     color: #33FF33;
     font-family: system
 }
+
+.blinker {
+    animation: blink 1.4s steps(1) infinite;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+}
