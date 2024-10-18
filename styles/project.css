@@ -1,13 +1,13 @@
 h3 {
-    background-color: #9ce8ed;
+    background-color: var(--foreground-color);
     padding: 14px;
     text-align: center;
     font-size: 1.5rem;
-    color: #2D848A;
+    color: var(--text-color);
 }
 
 .article__project {
-    background-color: #C1DFF0;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -19,7 +19,7 @@ h3 {
 }
 
 code {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 2px;
 }
 
@@ -34,14 +34,14 @@ code {
 }
 
 .ssh__key {
-    background-color: rgb(165, 206, 237);
+    background-color: var(--foreground-color);
     border-radius: 10px;
     margin: 20px;
     padding: 24px;
 }
 
 .repo {
-    background-color: rgb(165, 206, 237);
+    background-color: var(--foreground-color);
     border-radius: 10px;
     margin: 20px;
     padding: 24px;

@@ -1,11 +1,11 @@
 .main-content {
-    background-color: aquamarine;
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
 }
 
 .grid-container {
-    background-color: azure;
+    background-color: var(--foreground-color);
     background-size: cover;
     background-position: center;
     border-radius: 20px;

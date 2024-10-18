@@ -1,0 +1,70 @@
+
+/* Paragraph bullet for changes pages*/
+ul.changes__paragraph {
+    list-style-type: square;
+  }
+  
+  .footer {
+    background-color: var(--footer-color);
+    color: #fff;
+    padding: 10px;
+  }
+  
+  .container__footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .column__footer {
+    width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+  
+  .column__footer p {
+    font-size: 18px;
+  }
+  
+  .column__footer h3 {
+    color: #252324;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .column__footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .column__footer ul li {
+    margin-bottom: 10px;
+    font-size: 17px;
+  }
+  
+  .column__footer img {
+    border-radius: 50%;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 60px;
+    transition: transform 0.2s, color 0.2s; /* Added color transition */
+    transition: 0.2s;
+  }
+  
+  .social-icons a:hover {
+    transform:translateX(-5px);
+    color: #88CCF1; /* Light blue color on hover */
+    transition: 0.2s;
+  }
+  
+  .copyright {
+  text-align: center;
+  }
