@@ -5,18 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/projectstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles/header.css">
 </head>
 <body>
     <header class="header">
-        <h1></h1>
+        <div class="menu">
+            <a class="menu__logo-container" href="./index.html"><div class="logo">Git Guide</div></a>
+            <a class="menu-item" href="./project.html"><p class="menu-item__text" style="text-shadow: #000 0 0 16px;">Starting out</p></a>
+            <a class="menu-item" href="./changes.html"><p class="menu-item__text">Adding changes</p></a>
+            <a class="menu-item" href="./branches.html"><p class="menu-item__text">Branching</p></a>
+            <a class="menu-item" href="./about.html"><p class="menu-item__text">About us</p></a>
+        </div>
+        <div class="current-page-display">
+            <h1 class="page-title">>>git init</h1>
+        </div>
     </header>
-
-    <main class="header__page-title">
-        This is Mikael speaking!
-    </main>
-
+        <main class="main">
+            <article class="article__project">
+               <h3>How to make an SSH key in Github</h3>
+                <ol class="flexbox">
+                    <div class="ssh__key a">
+                        <li>Check for existing SSH keys on you computer, open terminal and type: 
+                            <p><code>$ ls -al ~/.ssh</code></p>
+                    </li>
+                    <p>If you see files like <code>id_rsa</code> and <code>id_rsa.pub</code> you already have a key</p></div>
+                    <div class="ssh__key">
+                        <li>Generante a new SSH key (if you don't already have one). I terminal, type:
+                            <p><code>ssh-keygen -t ed25519 -(your gitemail@example.com)</code></p>
+                        </li>
+                        <p>When promted, press "Enter" to accept the default location</p>
+                        <p>Set a password for extra security (optional)</p>
+                    </div>
+                    <div class="ssh__key">
+                        <li>Add the SSH key to the SSH agent</li>
+                        <p>Start the SSH agent:</p>
+                        <p><code>eval "dollarsign(ssh-agent -s)</code></p>
+                        <p>Then add your SSh key:</p>
+                        <p><code>ssh-add "-"/.ssh/id_ed25519</code></p>
+                    </div>    
+                    <div class="ssh__key">
+                        <li>Copy the SSH key to your clipboard</li>
+                        <p>Copy your key to your clipboard</p>
+                        <p>Now, copy your public key to add it to Github:</p>
+                        <p>Run this command to copy it:</p>
+                        <p><code>cat ~/.ssh/id_ed25519.pub</code></p>
+                        <p>Highlight the key and copy it.</p>
+                    </div>
+                    <div class="ssh__key">
+                    <li>Add the SSH key to your Github account:</li>
+                    <ul>
+                        <li>Go to your github account</li>
+                        <li>In the upper-right corner, click on your profile picture, then go to SETTINGS.</li>
+                        <img class="image cornerlogo" src="./project-article images/cornerlogo.png" alt="info" height="100%" width="100%">
+                        <img class="image settings" src="./project-article images/settings.png" alt="info" height="100%" width="100%">
+                        <li>On the left sidebar, click SHH and GPG keys.</li>
+                        <img class="image shhandgpgkeys" src="./project-article images/sshandgpgkeys.png" alt="info" height="100%" width="100%">
+                        <li>Click "New SSH key".</li>
+                        <img class="image newkey" src="./project-article images/newkey.png" alt="info" height="100%" width="100%">
+                    </ul></div>
+                    <div class="image ssh__key">
+                        <li>Paste your key and give it a title, then click "Add SSH key".</li>
+                        <img class="image addkey" src="./project-article images/addkey.png" alt="info" height="100%" width="100%">
+                    </div>
+                    <p><b>You are done! Now you can use SSH to interact with Github.</b></p>
+                </ol>
+                <h3>How to create a repository</h3>
+                <ol class="flexbox">
+                    <div class="repo">
+                        <p><b>Why is remote repositories necessary?</b></p>
+                        <p>It makes it possible for multiple developers to work on the same projet at the same time. Also to see who has done what. Remote repositories allows us to store the different versions of a code to maintain a remote history.</p>
+                    </div>
+                    <div class="repo">
+                        <li>Steps of creating a project on Github:</li>
+                        <p>1.Create a local project in the usual way (make a folder withex. index.html and a styles folder with a css file).</p>
+                        <p>2. Then you have to turn a normal project into a git project:</p>
+                        <ul>In terminal, type: <code>git init</code>,this creates a hidden directory called <code>git</code> that enables communication with github. (To see hidden files, type: <code>-a</code>in command line).</ul>
+                    </div>
+                    <div class="repo">
+                        <li>Create a repository for the project on github:</li>
+                        <ul>Go to your account on github</ul>
+                        <ul>Go to repositories and create a new repository</ul>
+                        <ul>Give the repository a name and choose "public", then "create repository"</ul>
+                    </div>
+                    <div class="repo">
+                        <li>Now you want to connect your local code to the repository!</li>
+                        <ul>After you clicked "create a repository", follow the instructions under <b>"...or push an existing repository from command line"</b></ul>
+                    </div>
+                    <div class="repo">
+                        <li>Now we want to clone our git project!</li>
+                        <ul>Go to the home page of the repository on github then look for the green "code" button, click that and in the dropdown, choose the "local" tab and then the "ssh" tab.</ul>
+                        <p>This will allow you to copy the url, should look something like this: <code>git@github.com:user/project-name.git</code></p>
+                        <li>In the terminal use the <b>git clone</b>command to make a local copy of the project, so write<code>git clone</code>and paste in your url that you copied and press enter.</li>
+                    </div>
+                    <div class="repo">
+                        <b>Done!</b>
+                        <p>You have now created a local version of your project on your machine.</p>
+                    </div>
+                </ol>   
+            </article>        
+        </main> 
     <footer class="footer">
-
+        <div class="container__footer">
+            <div class="column__footer">
+                <a href=""><img src="./image/futurelogo.jpg" alt="Company Logo" width="100"></a><h3> This is Futuregames</h3>               
+            </div>
+            <div class="column__footer">
+                <h3>TEAM MACEDONIA</h3>
+                <ul>
+                    <li>Alexander Lindström</li>
+                    <li>Saif El Islam Eisa</li>
+                    <li>Priyesh Illam</li>
+                    <li>Caroline Lindbom</li>
+                    <li>Mikael Maatala Sand</li>
+                </ul>
+            </div>
+            <div class="column__footer">
+                <h3>Connect with Futuregames</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/FuturegamesEDU/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/school/futuregames/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/futuregamesedu/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://x.com/futuregamesedu"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>          
+            <div class="column__footer">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Hammarby Fabriksväg 61, 120 30</p>
+                <p><i class="fas fa-phone-alt"></i> +46(0)8 33 60 15</p>
+                <p><i class="fas fa-envelope"></i><a href="mailto: info@futuregames.se">info@futuregames.se</a></p>               
+            </div>
+        </div>   
+        <div class="copyright">
+            <p>&copy; 2024 @ Team Macedonia</p>
+        </div>
     </footer>
 </body>
 </html>

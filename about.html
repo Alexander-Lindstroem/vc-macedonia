@@ -5,18 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
     <header class="header">
-        <h1></h1>
+        <div class="menu">
+            <a class="menu__logo-container" href="./index.html"><div class="logo">Git Guide</div></a>
+            <a class="menu-item" href="./project.html"><p class="menu-item__text">Starting out</p></a>
+            <a class="menu-item" href="./changes.html"><p class="menu-item__text">Adding changes</p></a>
+            <a class="menu-item" href="./branches.html"><p class="menu-item__text">Branching</p></a>
+            <a class="menu-item" href="./about.html"><p class="menu-item__text" style="text-shadow: #000 0 0 16px;">About us</p></a>
+        </div>
+        <div class="current-page-display">
+            <h1 class="page-title">>>git config --global user.name team-macedonia</h1>
+        </div>
     </header>
-
-    <main class="header__page-title">
-        Hello
+    <main class="main-content">
+        <div class="grid-container picture mikael"></div>
+        <div class="grid-container info">
+            <p>Mikael Maatala Sand</p>
+            <p>37 years</p>
+            <p>Hägerstensåsen</p>
+            <p>Nintendo</p>
+            <p><a href="mailto:mikael.maatala.sand@edu.futuregames.se">Mail me</a></p>
+        </div>
+        <div class="grid-container picture alex"></div>
+        <div class="grid-container info">
+            <p>Alexander Lindström</p>
+            <p>31 years</p>
+            <p>Sickla</p>
+            <p>Japanese</p>
+            <p><a href="mailto:example@mail.com">Mail me</a></p>
+        </div>
+        <div class="grid-container picture saif"></div>
+        <div class="grid-container info">
+            <p>Saifelislam Eisa</p>
+            <p>23</p>
+            <p>Skarpnäck</p>
+            <p>Sports</p>
+            <p><a href="mailto:saifeisa820@gmail.com">Mail me</a></p>
+        </div>
+        <div class="grid-container picture caroline"></div>
+        <div class="grid-container info">
+            <p>Caroline Lindbom</p>
+            <p>28 years</p>
+            <p>Bålsta</p>
+            <p>Painting</p>
+            <p><a href="mailto:example@mail.com">Mail me</a></p>
+        </div>
+        <div class="grid-container picture priyesh"></div>
+        <div class="grid-container info">
+            <p>Priyesh Illam</p>
+            <p>41 years</p>
+            <p>Södertälje</p>
+            <p>English</p>
+            <p><a href="mailto:example@mail.com">Mail me</a></p>
+        </div>
     </main>
-
     <footer class="footer">
-
+        <div class="container__footer">
+            <div class="column__footer">
+                <a href=""><img src="./image/futurelogo.jpg" alt="Company Logo" width="100"></a><h3> This is Futuregames</h3>   
+            </div>
+            <div class="column__footer">
+                <h3>TEAM MACEDONIA</h3>
+                <ul>
+                    <li>Alexander Lindström</li>
+                    <li>Saif El Islam Eisa</li>
+                    <li>Priyesh Illam</li>
+                    <li>Caroline Lindbom</li>
+                    <li>Mikael Maatala Sand</li>
+                </ul>
+            </div>
+            <div class="column__footer">
+                <h3>Connect with Futuregames</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/FuturegamesEDU/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/school/futuregames/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/futuregamesedu/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://x.com/futuregamesedu"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="column__footer">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Hammarby Fabriksväg 61, 120 30</p>
+                <p><i class="fas fa-phone-alt"></i> +46(0)8 33 60 15</p>
+                <p><i class="fas fa-envelope"></i><a href="mailto: info@futuregames.se">info@futuregames.se</a></p>  
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 @ Team Macedonia</p>
+        </div>
     </footer>
 </body>
 </html>
